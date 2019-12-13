@@ -22,6 +22,7 @@
     "test": "node ./dockest.js",
     "build": "NODE_ENV=production webpack",
     "build:watch": "NODE_ENV=production webpack --watch",
+    "build:docker": "docker build . -t bull-board:latest",
     "start": "node example.js",
     "start:dev": "concurrently \"yarn build:watch\" \"yarn start\"",
     "start:example": "yarn build && yarn start"

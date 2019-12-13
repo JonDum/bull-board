@@ -16,7 +16,40 @@ Bull Dashboard is a UI built on top of [Bull](https://github.com/OptimalBits/bul
 
 ![UI](https://raw.githubusercontent.com/vcapretz/bull-board/master/shot.png)
 
-## Starting
+## Standalone Version
+
+The standalone version will attempt to discover your bull queues dynamically.
+
+### Node
+
+```
+npm run build
+node standalone.js
+```
+
+
+### Docker
+
+```
+docker run --rm -p 3000 jondum/bull-board:latest
+```
+
+Environment Variables:
+
+`BULL_PREFIX` -- default `bull`
+
+`REFRESH_INTERVAL` -- default `10000`
+
+`REDIS_HOST` -- default `localhost`
+
+`REDIS_PORT` -- default `6379`
+
+`REDIS_USE_TLS` -- default `false`
+
+`PORT` -- default `3000`
+
+
+## Integrated Version
 
 To add it to your project start by adding the library to your dependencies list:
 

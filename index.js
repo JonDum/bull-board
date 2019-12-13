@@ -28,6 +28,7 @@ function UI() {
 }
 
 module.exports = {
+
   UI: UI(),
 
   setQueues: bullQueues => {
